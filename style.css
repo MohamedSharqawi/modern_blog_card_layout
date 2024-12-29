@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark-gray: hsl(0, 0%, 7%);
+    --white-gray: hsl(0, 0%, 42%);
+    --white: hsl(0, 0%, 100%);
+    --yellow: hsl(47, 88%, 63%);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+html {
+    font-family: Figtree;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body main {
+    background-color: var(--white);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 0 var(--dark-gray);
+}
+
+body main > img {
+    border-radius: 10px;
+}
+
+body main p.box {
+    color: var(--dark-gray);
+    font-size: 0.9rem;
+    font-weight: 800;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: var(--yellow);
+}
+
+body main .date {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+
+body main h1 a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--dark-gray);
+}
+
+body main h1 a:hover {
+    color: var(--yellow);
+}
+
+body main p.desc {
+    color: var(--white-gray);
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+body main .profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+body main .profile img {
+    width: 30px;
+}
+
+body main .profile p {
+    font-weight: 800;
+    font-size: 0.8rem;
+    color: var(--dark-gray);
+}
+
